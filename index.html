@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>My Library</h1>
+    <div id="library">
+        <div class="control">
+            <h2>Navigation</h2>
+            <div class="navigation">
+                <button>Display All Books</button>
+                <button>Mark as Read</button>
+                <button>Mark as not Started</button>
+                <button>Remove Book</button>
+            </div>
+            <div class="input">
+                <h2>Book indent</h2>
+                <form action="###" method="get">
+                    <p>
+                        <label id="label1" for="bookTitle">Book Title</label>
+                        <input type="text" name="name" id="bookTitle">
+                    </p>
+                    <p>
+                        <label id="label2" for="bookDescreption">Book Descreption</label>
+                        <input type="text" name="descreption" id="bookDescreption">
+                    </p>
+                    <p>
+                        <label id="label3" for="bookAuthor">Author</label>
+                        <input type="text" name="author" id="bookAuthor">
+                    </p>
+                    <p>
+                        <label id="label4" for="bookPages">Book Length</label>
+                        <input type="number" name="pages" id="bookPages">
+                    </p>
+                    <p>
+                        <label id="label5" for="BookStatus">Reading Status</label>
+                        <input list="BookStatus" name="status">
+                        <datalist id="BookStatus">
+                            <option value="Started Reading">
+                            <option value="Not yet Started">
+                        </datalist>
+                    </p>
+                </form>
+                <button>Clear Form</button>
+                <button>Add Book to Shelf</button>
+            </div>
+        </div>
+        <div class="display">
+            <h2>Book Shelf</h2>
+            <div class="books">
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

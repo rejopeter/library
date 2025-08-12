@@ -1,0 +1,164 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+#library {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    
+    font-weight: 700;
+    font-style: normal;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+h2 {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input > h2 {
+    padding: 0;
+}
+
+h1, h2 {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.control, .display {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    box-sizing: border-box;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.books {
+    display: flex;
+}
+
+form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "name title"
+        "desc about"
+        "author aname"
+        "length pages"
+        "status value";
+    gap: 15px;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+form p {
+    display: contents;
+}
+
+#label1 {
+    grid-area: name;
+}
+#bookTitle {
+    grid-area: title;
+}
+#label2 {
+    grid-area: desc;
+}
+#bookDescreption {
+    grid-area: about;
+}
+#label3 {
+    grid-area: author;
+}
+#bookAuthor {
+    grid-area: aname;
+}
+#label4 {
+    grid-area: length;
+}
+#bookPages {
+    grid-area: pages;
+}
+#label5 {
+    grid-area: status;
+}
+#BookStatus {
+    grid-area: value;
+}
+
+.input {
+    display: flex;
+    border: 1px solid;
+    border-radius: 25px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+input {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid;
+    
+}
+
